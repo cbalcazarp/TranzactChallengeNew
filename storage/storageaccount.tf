@@ -15,11 +15,11 @@ terraform {
 
 resource "azurerm_storage_account" "tr_stac" {
   #name = "${var.base_name}${random_string.tr_random.result}"
-  name = "${var.base_name}cbalcazar4585"
-  resource_group_name = var.resource_group_name
-  location = var.location
-  account_tier = var.account_tier
-  account_replication_type = var.account_replication_type
+  name                      = "${var.base_name}cbalcazar4585"
+  resource_group_name       = var.resource_group_name
+  location                  = var.location
+  account_tier              = var.account_tier
+  account_replication_type  = var.account_replication_type
 
   network_rules {
     bypass                     = [var.bypass]
