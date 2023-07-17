@@ -30,7 +30,7 @@ These are the tools I used for the completion of this challenge with their corre
 
 ### Step 1:
 
-Comment out the backend block and Save
+Comment out the backend block and Save in the **main.tf** file
 
 ```
 #terraform {
@@ -69,7 +69,7 @@ terraform apply
 ```
 ### Step 6:
 
-Uncomment backend block and Save
+Uncomment backend block and Save in the **main.tf** file
 
 ```
 terraform {
