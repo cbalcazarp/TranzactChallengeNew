@@ -25,7 +25,7 @@ module "storage_module" {
   account_replication_type      = "LRS"
   container_access_type         = "private"
   default_action                = "Deny"
-  ip_rules                      = ["190.237.28.62"]
+  ip_rules                      = ["181.66.207.115"]
   bypass                        = "AzureServices"
   virtual_network_subnet_ids    = [module.networking_module.subnet_id]
   owner_name                    = module.networking_module.owner_name
@@ -42,7 +42,7 @@ module "vault_module" {
   sku_name                      = "standard"
   bypass                        = "AzureServices"
   default_action                = "Deny"
-  ip_rules                      = ["190.237.28.62"]
+  ip_rules                      = ["181.66.207.115"]
   virtual_network_subnet_ids    = [module.networking_module.subnet_id]
   owner_name                    = module.networking_module.owner_name
 }
